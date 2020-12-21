@@ -1,8 +1,8 @@
 {
-  "name": "@taskr/sass",
-  "version": "1.1.0",
-  "description": "Compile SASS with `node-sass` and Taskr",
-  "repository": "lukeed/taskr",
+  "name": "@nickkaramoff/taskr-sass",
+  "version": "2.0.0",
+  "description": "Compile SASS with Dart Sass and Taskr",
+  "repository": "NickKaramoff/taskr-sass",
   "license": "MIT",
   "main": "index.js",
   "files": [
@@ -14,23 +14,24 @@
   "keywords": [
     "taskr",
     "taskr-plugin",
-    "node-sass",
     "sass"
   ],
   "author": {
-    "name": "Luke Edwards",
-    "email": "luke@lukeed.com",
-    "url": "https://lukeed.com"
+    "name": "Nikita Karamov",
+    "email": "nick@karamoff.dev",
+    "url": "https://karamoff.dev"
   },
   "dependencies": {
-    "node-sass": "^4.5.0"
+    "sass": "^1.30.0"
   },
   "devDependencies": {
     "@taskr/clear": "^1.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1",
     "taskr": "^1.1.0"
   },
   "engines": {
-    "node": ">= 4.6"
+    "node": ">=8.9.0"
   },
   "publishConfig": {
     "access": "public"

@@ -1,7 +1,7 @@
 'use strict';
 
 const p = require('path');
-const sass = require('node-sass');
+const sass = require('sass');
 
 module.exports = function (task, utils) {
   const render = utils.promisify(sass.render);
@@ -14,7 +14,7 @@ module.exports = function (task, utils) {
     // option checks for `sourceMap`
     if (opts.sourceMap && typeof opts.sourceMap === 'boolean' && !opts.outFile) {
       return this.emit('plugin_error', {
-        plugin: '@taskr/sass',
+        plugin: '@nickkaramoff/taskr-sass',
         message: 'You must specify an `outFile` if using a `boolean` value for `sourceMap`.'
       });
     }

@@ -7,9 +7,9 @@ const test = require('tape');
 const dir = join(__dirname, 'fixtures');
 const tmp = join(__dirname, 'tmp');
 
-const expect = '.file__c{visibility:hidden}.file__b{display:block}.file__a{display:none}.main{display:block}\n';
+const expect = '.file__c{visibility:hidden}.file__b{display:block}.file__a{display:none}.main{display:block}';
 
-test('@taskr/sass', t => {
+test('@nickkaramoff/taskr-sass', t => {
   t.plan(7);
 
   const taskr = new Taskr({
